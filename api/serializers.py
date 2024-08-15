@@ -18,7 +18,7 @@ class AlbomSerializerTelegram(serializers.ModelSerializer):
 class SongSerializerTelegram(serializers.ModelSerializer):
     class Meta:
         model = Song
-        fields = ('title', 'description', 'artist')
+        fields = ('title', 'description', 'artist', 'listen')
 
 
 class SongsAlbomSerializerTelegram(serializers.ModelSerializer):
@@ -43,7 +43,7 @@ class AlbomSerializerWeb(serializers.ModelSerializer):
 class SongSerializerWeb(serializers.ModelSerializer):
     class Meta:
         model = Song
-        fields = ('id', 'title', 'description', 'image', 'artist')
+        fields = ('id', 'title', 'description', 'image', 'artist', 'listen', 'status')
 
 
 class SongsAlbomSerializerWeb(serializers.ModelSerializer):

@@ -9,7 +9,7 @@ router.register(r'artists-telegram', ArtistViewSetTelegram, basename='artists-te
 router.register(r'albom-web', AlbomViewSetWeb, basename='albom-web')
 router.register(r'albom-telegram', AlbomViewSetTelegram, basename='albom-tele')
 router.register(r'song-web', SongViewSetWeb, basename='song-web')
-router.register(r'song-telegram', SongViewSetTelegram, basename='song-telegram')
+router.register(r'song-telegram', SongViewSetTelegram, basename='song-telegramv')
 urlpatterns = [
     path('', include(router.urls)),
 ]
